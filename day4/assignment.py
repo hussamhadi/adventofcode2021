@@ -41,16 +41,5 @@ def day4_2():
 
 
 if __name__ == '__main__':
-    durations = []
-    no_of_runs = 1000
-    print_result = False
-    for i in range(no_of_runs):
-        start = datetime.now()
-        result = day4_2()
-        if print_result:
-            print("answer is {}".format(result))
-        end = datetime.now()
-        durations.append(end - start)
-
-    durations = sum([x.microseconds for x in durations]) / no_of_runs
-    print("took {} ms on average".format(durations/1000.0))
+    result = day4_2()
+    print("answer is {}".format(result))
